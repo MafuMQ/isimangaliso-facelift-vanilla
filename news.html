@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - Isimangaliso Wetland Park</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/images/logo.png" alt="Isimangaliso Wetland Park" class="logo-img">
+                    <span class="logo-text">Isimangaliso</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Places to Visit</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="places/safari.html" class="dropdown-link">Safari Areas</a></li>
+                                <li><a href="places/beaches.html" class="dropdown-link">Coastal Areas</a></li>
+                                <li><a href="places/wetlands.html" class="dropdown-link">Wetlands</a></li>
+                                <li><a href="places/cultural-sites.html" class="dropdown-link">Cultural Sites</a></li>
+                                <li><a href="places/accommodation.html" class="dropdown-link">Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link active">News & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resources.html" class="nav-link">Resource Centre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">News & Events</h1>
+                <p class="page-subtitle">Stay updated with the latest happenings at Isimangaliso</p>
+            </div>
+        </section>
+
+        <!-- News Filter -->
+        <section class="news-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="conservation">Conservation</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article">
+            <div class="container">
+                <article class="featured-post">
+                    <div class="featured-content">
+                        <div class="featured-text">
+                            <span class="article-category">Conservation</span>
+                            <h2 class="featured-title">Major Conservation Milestone: Rhino Population Increases by 15%</h2>
+                            <p class="featured-excerpt">Our dedicated conservation efforts have resulted in a significant increase in the black and white rhino populations within Isimangaliso. This milestone represents years of collaborative work between our rangers, researchers, and local communities.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 20, 2024</span>
+                                <span class="article-author">By Dr. Sarah Johnson</span>
+                            </div>
+                            <a href="#rhino-conservation" class="btn btn-primary">Read Full Story</a>
+                        </div>
+                        <div class="featured-image">
+                            <img src="assets/images/news/rhino-conservation.jpg" alt="Rhino Conservation Success" class="news-hero-img">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-section">
+            <div class="container">
+                <div class="news-articles">
+                    <!-- Conservation News -->
+                    <article class="news-article" data-category="conservation">
+                        <img src="assets/images/news/turtle-program.jpg" alt="Turtle Conservation" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Conservation</span>
+                            <h3 class="article-title">Turtle Conservation Program Sees Record Nesting Season</h3>
+                            <p class="article-excerpt">This year's turtle nesting season has been exceptional, with over 400 loggerhead and leatherback turtle nests recorded along our coastline.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 15, 2024</span>
+                                <span class="read-time">3 min read</span>
+                            </div>
+                            <a href="#turtle-conservation" class="article-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Events -->
+                    <article class="news-article" data-category="events">
+                        <img src="assets/images/news/photography-workshop.jpg" alt="Photography Workshop" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Events</span>
+                            <h3 class="article-title">Wildlife Photography Workshop - April 2024</h3>
+                            <p class="article-excerpt">Join renowned wildlife photographer John Smith for a three-day intensive workshop capturing the beauty of Isimangaliso's diverse wildlife.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 12, 2024</span>
+                                <span class="read-time">2 min read</span>
+                            </div>
+                            <a href="#photography-workshop" class="article-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Research -->
+                    <article class="news-article" data-category="research">
+                        <img src="assets/images/news/marine-research.jpg" alt="Marine Research" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Research</span>
+                            <h3 class="article-title">New Marine Species Discovered in Isimangaliso Waters</h3>
+                            <p class="article-excerpt">Marine biologists have identified a new species of soft coral in the deeper waters of our marine protected areas, highlighting the park's incredible biodiversity.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 10, 2024</span>
+                                <span class="read-time">4 min read</span>
+                            </div>
+                            <a href="#marine-discovery" class="article-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Community -->
+                    <article class="news-article" data-category="community">
+                        <img src="assets/images/news/community-program.jpg" alt="Community Program" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Community</span>
+                            <h3 class="article-title">Local School Children Participate in Environmental Education Program</h3>
+                            <p class="article-excerpt">Over 200 students from local schools visited Isimangaliso this month as part of our environmental education outreach program.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 8, 2024</span>
+                                <span class="read-time">3 min read</span>
+                            </div>
+                            <a href="#education-program" class="article-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- More Conservation -->
+                    <article class="news-article" data-category="conservation">
+                        <img src="assets/images/news/anti-poaching.jpg" alt="Anti-poaching Efforts" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Conservation</span>
+                            <h3 class="article-title">Anti-Poaching Unit Receives New Technology to Combat Wildlife Crime</h3>
+                            <p class="article-excerpt">Our rangers are now equipped with advanced surveillance technology and drones to enhance protection efforts across the park.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 5, 2024</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <a href="#anti-poaching" class="article-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Events -->
+                    <article class="news-article" data-category="events">
+                        <img src="assets/images/news/whale-festival.jpg" alt="Whale Festival" class="article-image">
+                        <div class="article-content">
+                            <span class="article-category">Events</span>
+                            <h3 class="article-title">Annual Whale Festival Returns This June</h3>
+                            <p class="article-excerpt">Celebrate the magnificent humpback whale migration with three days of activities, educational talks, and boat excursions.</p>
+                            <div class="article-meta">
+                                <span class="article-date">March 3, 2024</span>
+                                <span class="read-time">2 min read</span>
+                            </div>
+                            <a href="#whale-festival" class="article-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button class="btn btn-secondary" id="load-more-btn">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="upcoming-events">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="events-calendar">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-month">APR</span>
+                            <span class="event-day">15</span>
+                        </div>
+                        <div class="event-details">
+                            <h3 class="event-title">Guided Night Safari</h3>
+                            <p class="event-description">Experience the magic of Isimangaliso after dark with our specialized night safari guides.</p>
+                            <div class="event-info">
+                                <span class="event-time">🕕 6:00 PM - 9:00 PM</span>
+                                <span class="event-location">📍 Western Shores</span>
+                            </div>
+                        </div>
+                        <div class="event-action">
+                            <a href="contact.html" class="btn btn-primary btn-small">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-month">APR</span>
+                            <span class="event-day">22</span>
+                        </div>
+                        <div class="event-details">
+                            <h3 class="event-title">Bird Watching Expedition</h3>
+                            <p class="event-description">Join our ornithologists for a guided bird watching tour featuring over 100 species.</p>
+                            <div class="event-info">
+                                <span class="event-time">🕕 5:30 AM - 11:00 AM</span>
+                                <span class="event-location">📍 Eastern Shores</span>
+                            </div>
+                        </div>
+                        <div class="event-action">
+                            <a href="contact.html" class="btn btn-primary btn-small">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-month">MAY</span>
+                            <span class="event-day">01</span>
+                        </div>
+                        <div class="event-details">
+                            <h3 class="event-title">World Heritage Day Celebration</h3>
+                            <p class="event-description">Celebrate Isimangaliso's World Heritage status with special activities and presentations.</p>
+                            <div class="event-info">
+                                <span class="event-time">🕘 9:00 AM - 4:00 PM</span>
+                                <span class="event-location">📍 Visitor Centre</span>
+                            </div>
+                        </div>
+                        <div class="event-action">
+                            <a href="contact.html" class="btn btn-primary btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-signup">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Connected</h2>
+                    <p>Subscribe to our newsletter for the latest news, events, and conservation updates from Isimangaliso Wetland Park.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Isimangaliso Wetland Park</h3>
+                    <p class="footer-description">South Africa's first World Heritage Site, protecting 332,000 hectares of pristine wilderness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="places/safari.html">Safari Areas</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📞 +27 35 590 1633</p>
+                        <p>✉️ info@isimangaliso.com</p>
+                        <p>📍 St Lucia, KwaZulu-Natal, South Africa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Isimangaliso Wetland Park Authority. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/news.js"></script>
+</body>
+</html>

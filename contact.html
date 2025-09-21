@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Isimangaliso Wetland Park</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/images/logo.png" alt="Isimangaliso Wetland Park" class="logo-img">
+                    <span class="logo-text">Isimangaliso</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Places to Visit</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="places/safari.html" class="dropdown-link">Safari Areas</a></li>
+                                <li><a href="places/beaches.html" class="dropdown-link">Coastal Areas</a></li>
+                                <li><a href="places/wetlands.html" class="dropdown-link">Wetlands</a></li>
+                                <li><a href="places/cultural-sites.html" class="dropdown-link">Cultural Sites</a></li>
+                                <li><a href="places/accommodation.html" class="dropdown-link">Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">News & Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resources.html" class="nav-link">Resource Centre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We're here to help plan your perfect visit to Isimangaliso</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h2>Get in Touch</h2>
+                        <p>Whether you're planning a safari adventure, need information about our conservation programs, or have questions about visiting Isimangaliso, our team is ready to assist you.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+27 35 590 1633</p>
+                                    <p>Mon-Fri: 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>info@isimangaliso.com</p>
+                                    <p>Response within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Office Location</h3>
+                                    <p>1 McKenzie Street</p>
+                                    <p>St Lucia, KwaZulu-Natal, 3936</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">🕐</div>
+                                <div class="contact-details">
+                                    <h3>Park Hours</h3>
+                                    <p>Gates: 5:00 AM - 7:00 PM</p>
+                                    <p>Visitor Centre: 8:00 AM - 4:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h2>Send us a Message</h2>
+                        <form id="contact-form" action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="booking">Safari Booking</option>
+                                    <option value="accommodation">Accommodation Inquiry</option>
+                                    <option value="education">Educational Programs</option>
+                                    <option value="conservation">Conservation Information</option>
+                                    <option value="general">General Information</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="visitDate">Preferred Visit Date</label>
+                                <input type="date" id="visitDate" name="visitDate">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="groupSize">Group Size</label>
+                                <select id="groupSize" name="groupSize">
+                                    <option value="">Select group size</option>
+                                    <option value="1-2">1-2 people</option>
+                                    <option value="3-5">3-5 people</option>
+                                    <option value="6-10">6-10 people</option>
+                                    <option value="11-20">11-20 people</option>
+                                    <option value="20+">20+ people</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your planned visit, specific requirements, or any questions you have..." required></textarea>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Find Us</h2>
+                <div class="map-container">
+                    <p>Interactive Map - Isimangaliso Wetland Park, St Lucia, KwaZulu-Natal</p>
+                </div>
+                <div class="map-info">
+                    <div class="map-card">
+                        <h3>🚗 By Car</h3>
+                        <p>Take the N2 highway to St Lucia. The park entrance is clearly signposted. Parking available at visitor centres.</p>
+                    </div>
+                    <div class="map-card">
+                        <h3>✈️ By Air</h3>
+                        <p>Nearest airport is King Shaka International Airport (2.5 hours drive). Charter flights available to local airstrips.</p>
+                    </div>
+                    <div class="map-card">
+                        <h3>🚌 Public Transport</h3>
+                        <p>Bus services available from Durban and Richards Bay. Contact us for detailed transport arrangements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Information -->
+        <section class="emergency-info">
+            <div class="container">
+                <div class="emergency-card">
+                    <h2>Emergency Information</h2>
+                    <div class="emergency-grid">
+                        <div class="emergency-item">
+                            <h3>🚨 Emergency Services</h3>
+                            <p><strong>Police:</strong> 10111</p>
+                            <p><strong>Medical:</strong> 10177</p>
+                            <p><strong>Fire:</strong> 112</p>
+                        </div>
+                        <div class="emergency-item">
+                            <h3>🏥 Nearest Hospital</h3>
+                            <p>Empangeni Provincial Hospital</p>
+                            <p>+27 35 901 3000</p>
+                            <p>45 minutes from St Lucia</p>
+                        </div>
+                        <div class="emergency-item">
+                            <h3>🦌 Park Rangers</h3>
+                            <p>24/7 Emergency: +27 35 590 1633</p>
+                            <p>For wildlife encounters or</p>
+                            <p>park-related emergencies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Isimangaliso Wetland Park</h3>
+                    <p class="footer-description">South Africa's first World Heritage Site, protecting 332,000 hectares of pristine wilderness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="places/safari.html">Safari Areas</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📞 +27 35 590 1633</p>
+                        <p>✉️ info@isimangaliso.com</p>
+                        <p>📍 St Lucia, KwaZulu-Natal, South Africa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Isimangaliso Wetland Park Authority. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
