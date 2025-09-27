@@ -262,6 +262,70 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Isimangaliso Wetland Park website loaded successfully');
     console.log('Current page:', document.title);
     console.log('Viewport size:', window.innerWidth + 'x' + window.innerHeight);
+
+        // Live Weather Section
+        const weatherLocations = [
+                {
+                    id: 'weather-location-1',
+                    name: 'Manguzi',
+                    lat: -26.996,
+                    lon: 32.752
+                },
+                {
+                    id: 'weather-location-2',
+                    name: 'Mbazwana',
+                    lat: -27.500,
+                    lon: 32.579
+                },
+                {
+                    id: 'weather-location-3',
+                    name: 'St Lucia',
+                    lat: -28.383,
+                    lon: 32.417
+                }
+            ];
+
+        const weatherApiKey = '86af6a46d02171fb33499e5241c20104';
+        const weatherApiBase = 'https://api.openweathermap.org/data/2.5/weather';
+
+        weatherLocations.forEach(loc => {
+            const url = `${weatherApiBase}?lat=${loc.lat}&lon=${loc.lon}&appid=${weatherApiKey}&units=metric`;
+            console.log(`[Weather] Fetching for ${loc.name}:`, url);
+            fetch(url)
+                .then(response => {
+                    console.log(`[Weather] Response for ${loc.name}:`, response);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(`[Weather] Data for ${loc.name}:`, data);
+                    const card = document.getElementById(loc.id);
+                    if (!card) {
+                        console.warn(`[Weather] Card not found for ${loc.name}`);
+                        return;
+                    }
+                    if (!data || data.cod !== 200) {
+                        const desc = card.querySelector('.weather-desc');
+                        desc.textContent = 'Weather unavailable';
+                        console.error(`[Weather] Error for ${loc.name}:`, data);
+                        return;
+                    }
+                    const temp = card.querySelector('.weather-temp');
+                    const icon = card.querySelector('.weather-icon');
+                    const desc = card.querySelector('.weather-desc');
+
+                    temp.textContent = `${Math.round(data.main.temp)}°C`;
+                    desc.textContent = data.weather[0].description;
+                    icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+                    icon.style.display = 'inline-block';
+                })
+                .catch((err) => {
+                    const card = document.getElementById(loc.id);
+                    if (!card) return;
+                    const desc = card.querySelector('.weather-desc');
+                    desc.textContent = 'Weather unavailable';
+                    console.error(`[Weather] Fetch failed for ${loc.name}:`, err);
+                });
+        });
 });
 
 // Utility functions
